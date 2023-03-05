@@ -22,6 +22,10 @@ public class MatrixCalculatorTests
             new LinearMatrixCalculator(),
             new AsyncPerCellMatrixCalculator(),
             new AsyncPerRowMatrixCalculator(),
+            new ThreadPerRowMatrixCalculator(4),
+            new ThreadPerRowMatrixCalculator(2),
+            new ThreadPerRowMatrixCalculator(3),
+            new ThreadPerRowMatrixCalculator(1),
         };
         foreach (var calculator in calculators)
         {
