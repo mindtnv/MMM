@@ -26,7 +26,6 @@ public class MultiplyMatrixBenchmark
         _threadPerRowMatrixCalculatorWithOneThread = new ThreadPerRowMatrixCalculator(1);
         _threadPerRowMatrixCalculatorWithHalfThreads = new ThreadPerRowMatrixCalculator(N / 2);
         _threadPerRowMatrixCalculatorWithNThreads = new ThreadPerRowMatrixCalculator(N);
-        _threadPerRowMatrixCalculatorWithNThreads = new ThreadPerRowMatrixCalculator();
     }
 
     [Benchmark(Description = "Linear Multiply", Baseline = true)]

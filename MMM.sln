@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMM.Tests", "MMM.Tests\MMM.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMM.Benchmarks", "MMM.Benchmarks\MMM.Benchmarks.csproj", "{A257E489-0E54-4F92-9ED8-5AA4155C5F7D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Increment", "Increment\Increment.csproj", "{14A54B11-7FC4-416B-8467-E2FADEE1737E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{A257E489-0E54-4F92-9ED8-5AA4155C5F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A257E489-0E54-4F92-9ED8-5AA4155C5F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A257E489-0E54-4F92-9ED8-5AA4155C5F7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14A54B11-7FC4-416B-8467-E2FADEE1737E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14A54B11-7FC4-416B-8467-E2FADEE1737E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14A54B11-7FC4-416B-8467-E2FADEE1737E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14A54B11-7FC4-416B-8467-E2FADEE1737E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
