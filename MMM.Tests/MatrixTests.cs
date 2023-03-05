@@ -1,14 +1,12 @@
 namespace MMM.Tests;
 
-using MMM;
-
 public class MatrixTests
 {
     [SetUp]
     public void Setup()
     {
     }
-    
+
     [Test]
     public void CreateTest()
     {
@@ -36,7 +34,7 @@ public class MatrixTests
             for (var j = 0; j < items[i].Length; j++)
                 Assert.AreEqual(items[i][j], matrix.GetItem(i, j));
     }
-    
+
     [Test]
     public void GetRowTest()
     {
@@ -47,12 +45,11 @@ public class MatrixTests
         };
         var matrix = Matrix<int>.Create(items);
         var row = matrix.GetRow(1).ToArray();
-        
+
         for (var i = 0; i < items[1].Length; i++)
             Assert.AreEqual(items[1][i], row[i]);
     }
-    
-    
+
     [Test]
     public void GetColumnTest()
     {
@@ -63,9 +60,8 @@ public class MatrixTests
         };
         var matrix = Matrix<int>.Create(items);
         var column = matrix.GetColumn(1).ToArray();
-        
+
         for (var i = 0; i < items.Length; i++)
             Assert.AreEqual(items[i][1], column[i]);
     }
-
 }

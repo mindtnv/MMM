@@ -4,7 +4,7 @@ namespace MMM;
 
 public class LinearMatrixCalculator : IMatrixCalculator
 {
-    public Matrix<T> Multiply<T>(Matrix<T> a, Matrix<T> b) where T : INumber<T>
+    public Task<Matrix<T>> MultiplyAsync<T>(Matrix<T> a, Matrix<T> b) where T : INumber<T>
     {
         var rows = a.RowsCount;
         var columns = b.ColumnsCount;
@@ -23,6 +23,6 @@ public class LinearMatrixCalculator : IMatrixCalculator
             }
         }
 
-        return Matrix<T>.Create(items);
+        return Task.FromResult(Matrix<T>.Create(items));
     }
 }
